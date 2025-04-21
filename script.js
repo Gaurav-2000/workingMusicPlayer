@@ -147,8 +147,8 @@ masterPlay.addEventListener('click', () => {
     else {
         music.pause();
         wave.classList.remove('active1')
-        masterPlay.classList.add('fa-solid',' fa-play');
-        masterPlay.classList.remove('fa-solid' ,' fa-pause');
+        masterPlay.classList.add('fa-solid', ' fa-play');
+        masterPlay.classList.remove('fa-solid', ' fa-pause');
     }
 });
 
@@ -158,7 +158,7 @@ let poster_master_play = document.getElementById('poster_master_play');
 
 Array.from(document.getElementsByClassName('playlistPlay')).forEach((e) => {
     e.addEventListener('click', (el) => {
-        index = el.target.id; 
+        index = el.target.id;
         music.src = `audio/${index}.mp3`;
         poster_master_play.src = `img/${index}.jpg`;
         music.play();
@@ -240,8 +240,8 @@ music.addEventListener('loadedmetadata', () => {
 });
 
 let seek = document.getElementById('seek');
-let bar2 = document.getElementById('bar2'); 
-let dot = document.querySelector('.dot'); 
+let bar2 = document.getElementById('bar2');
+let dot = document.querySelector('.dot');
 
 music.addEventListener('timeupdate', () => {
     let currentTime = music.currentTime;
